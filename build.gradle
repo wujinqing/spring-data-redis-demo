@@ -1,0 +1,27 @@
+group 'com.jin'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile (
+            "junit:junit:4.11"
+    )
+
+    compile (
+            "redis.clients:jedis:2.9.0",
+            "org.springframework.data:spring-data-redis:1.8.3.RELEASE",
+            "org.apache.logging.log4j:log4j-api:2.8",
+            "org.apache.logging.log4j:log4j-core:2.8",
+            "org.apache.logging.log4j:log4j-slf4j-impl:2.8",
+            "org.slf4j:slf4j-api:1.7.21",
+            "redis.clients:jedis:2.9.0"
+    )
+}
